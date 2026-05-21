@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+nav {
+  display: flex;
+  background-color: white;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: whitesmoke;
+  color: gray;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#myPic {
+  display: block;
+  width: 40%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.hero {
+  background: #1e293b;
+}
+
+.project-card {
+  background: #334155;
+  padding: 20px;
+  margin: 20px auto;
+  width: 250px;
+  border-radius: 10px;
+}
