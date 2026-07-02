@@ -6,18 +6,27 @@ body {
 }
 
 nav {
-  display: flex;
-  background-color: white;
-  justify-content: flex-end;
-  gap: 20px;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: #0f172a;
+    padding: 14px 20px;
+}
+
+#myName {
+    margin-right: auto;   /* Pushes everything after it to the right */
+    color: rgb(235, 232, 232);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav a {
+    color: rgb(235, 232, 232);
+    text-decoration: none;
+    margin-left: 20px;
 }
 
 nav a:hover {
-  background-color: whitesmoke;
-  color: gray;
+    color: #38bdf8;
 }
 
 section {
@@ -25,13 +34,48 @@ section {
   text-align: center;
 }
 
+#About {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 80px;
+}
+
+.about-text {
+    flex: 1;
+    text-align: center;
+}
+
+.about-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
 #myPic {
-  display: block;
-  width: 40%;
-  max-width: 600px;
-  height: auto;
-  margin: 0 auto;
-  padding: 0;
+    width: 400px;
+    max-width: 100%;
+    border-radius: 15px;
 }
 
 .hero {
@@ -44,4 +88,39 @@ section {
   margin: 20px auto;
   width: 250px;
   border-radius: 10px;
+}
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;   /* Centers the icons horizontally */
+    align-items: center;       /* Centers them vertically */
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.socials img {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.socials img:hover {
+    transform: scale(1.15);
+}
+#Contact {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#Contact h2 {
+    margin-bottom: 20px;
 }
